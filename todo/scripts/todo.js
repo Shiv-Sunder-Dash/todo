@@ -54,15 +54,4 @@ function filterByStatus(status) {
 function processTodos(items, handler) {
     items.forEach(handler);
 }
-const exampleFullTodo = {
-    id: 1,
-    task: "Example",
-    completed: false,
-    createdAt: new Date()
-};
-const readOnlyTodo = {
-    id: 2,
-    task: "Static",
-    completed: true
-};
 window.onload = fetchTodos;
