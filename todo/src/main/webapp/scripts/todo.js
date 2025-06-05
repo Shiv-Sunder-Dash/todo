@@ -4,12 +4,12 @@ let todos = [];
 function renderTodos() {
     const list = document.getElementById("todoList");
     list.innerHTML = "";
-    todos.forEach((item, index) => {
+    todos.forEach((item) => {
         const li = document.createElement("li");
-        li.textContent = item + " ";
+        li.textContent = item.task + " ";
         const btn = document.createElement("button");
         btn.textContent = "Delete";
-        btn.onclick = () => deleteTodo(index);
+        btn.onclick = () => deleteTodo(item.id);
         li.appendChild(btn);
         list.appendChild(li);
     });
