@@ -44,3 +44,25 @@ function deleteTodo(index) {
 }
 
 window.onload = fetchTodos;
+
+console.log(hoistedVar);
+var hoistedVar = "Hoisting works";
+
+const exampleTodo = { id: 101, task: "Example from object concept" };
+
+const sampleTasks = ["Buy fruits", "Complete assignment", "Read book"];
+
+if (sampleTasks.length > 0) {
+    console.log("Sample tasks are available");
+}
+
+function printTasks(arr) {
+    arr.forEach(t => console.log("Task:", t));
+}
+printTasks(sampleTasks);
+
+let taskId = 1;
+let taskName = "Grocery";
+let isCompleted = false;
+let additionalData = null;
+let notDefined;
